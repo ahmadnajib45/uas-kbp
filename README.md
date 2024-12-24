@@ -1,4 +1,5 @@
-# UAS Project: Website Pendukung Kegiatan Belajar
+# Projek UAS: Study Manager 
+Website Pendukung Kegiatan Belajar
 
 ## Deskripsi
 Website ini dirancang untuk membantu meningkatkan produktivitas belajar dengan berbagai fitur yang mendukung metode belajar efektif seperti Pomodoro Timer, To-Do List, Statistik Pembelajaran, dan hiburan berupa pemutar musik berbasis YouTube. Proyek ini mengintegrasikan teknologi front-end yang modern untuk pengalaman pengguna yang optimal.
