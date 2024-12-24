@@ -1,0 +1,360 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #36c293;
+    color: #1f3228;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+footer {
+    text-align: center;
+    color: aliceblue;
+    background-color: #2e4e41;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#home {
+    padding: 50px;
+    background-color: #b6eec7;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a7c59;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#home ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+    color: #4a7c59;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+#home ul li {
+    margin-bottom: 10px;
+}
+
+/* Tombol di Home */
+#home button {
+    background-color: #4a7c59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#home button:hover {
+    background-color: #6aa87e;
+}
+
+aside {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 300px;
+    background: #47977c;
+    padding: 1em; 
+    border-radius: 20px; 
+    box-shadow: 0 0 10px #333; 
+    z-index: 1000;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+aside {
+    display: none;
+}
+
+#home > p {
+    text-align: justify;
+}
+
+#home > ul {
+    text-align: start;
+}
+
+
+
+#pomodoro, #toDoList, #spotify {
+    background: #47977c;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #333;
+    width: 100%;
+}
+
+#pomodoro {
+    max-width: 500px;
+}
+
+#toDoList {
+    max-width: 600px;
+}
+
+#spotify {
+    background-color: #2e4e41;
+    color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#spotify h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    color: #8ddac0;
+}
+
+#spotify p {
+    margin: 0 0 1em 0;
+    font-size: 0.9rem;
+    color: #d1e7dd;
+}
+
+#search-container {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+#search-input {
+    flex: 1;
+    padding: 0.5em;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #6aa87e;
+}
+
+#search-button {
+    padding: 0.5em 1em;
+    font-size: 0.9rem;
+    background-color: #6aa87e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #8ddac0;
+}
+
+#results {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: left;
+}
+
+#results div {
+    background-color: #47977c;
+    padding: 0.5em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: #fff;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#results img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#player {
+    margin-top: 1em;
+}
+
+#player iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#chart {
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #b6eec7;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+#chart h2 {
+    font-size: 2rem;
+    color: #4a7c59;
+    margin-bottom: 1rem;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+
+button {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    
+}
+
+button:hover {
+    background-color: #8ddac0;
+}
+
+input {
+    margin: 0.3em;
+    padding: 0.3em 1em;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#clock {
+    font-size: 60px;
+    margin: 2rem;
+    color: aliceblue;
+}
+
+#tasks {
+    padding: 0;
+    margin-top: 15px;
+}
+
+#tasks li {
+    display: flex;
+    text-align: left;
+    margin: 10px;
+    padding-left: 20px;
+    align-items: center;
+    background-color: #52ab89;
+    color: #2b381c;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #333;
+}
+
+#tasks li span {
+    flex-grow: 2;
+}
+
+#tasks button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+h2 {
+    background-color: #b6eec7;
+    padding: 1%;
+    border-radius: 10px;
+    border: #1f3228;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    background-color: #52ab89;
+    padding: 3% 0 3% 0;
+    border-radius: 10px;
+    border: #1f3228;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#studyTimeChart, #taskCompletionChart {
+    background-color: #b6eec7;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    background: #47977c;
+    padding: 30px 75px 30px 75px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #333;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #home {
+        padding: 30px;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    #home ul li {
+        font-size: 0.9rem;
+    }
+
+    #spotify {
+        max-width: 300px;
+    }
+
+    #tasks button {
+        margin-left: 5px;
+        padding: 2.5px 5px;
+    }
+}

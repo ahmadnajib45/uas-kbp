@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pendukung Pembelajaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #7ba18b;">
+        <div class="container-fluid">
+          <a class="navbar-brand"><strong>Study Manager</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pomodoro">Timer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#toDoList">Target</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#statistics">Statistik</a>
+                </li>
+            </ul>
+          </div>
+          <div id="spotify-button">
+            <button id="toggleAside">Tampilkan Spotify</button>
+        </div>
+        </div>
+      </nav>
+    <main>
+        <section id="home" class="active">
+            <h1>Selamat Datang di Study Manager</h1>
+            <p>
+                Study Manager adalah alat bantu belajar yang menyediakan Pomodoro Timer dan Target Penyelesaian 
+        untuk membantu Anda fokus dan produktif. Metode Pomodoro adalah teknik manajemen waktu 
+        yang menggunakan interval kerja singkat diikuti oleh waktu istirahat.
+            </p>
+            <p>
+                Teknik ini membantu mengurangi kelelahan mental dan meningkatkan efisiensi dalam menyelesaikan tugas-tugas Anda.
+            </p>
+            <ul>
+                <li>Fokus selama 25 menit</li>
+                <li>Istirahat selama 5 menit</li>
+                <li>Ulangi siklus ini untuk menjaga fokus belajar</li>
+            </ul>
+        </section>
+        <section id="pomodoro">
+            <h2>Timer Aktivitas Pomodoro</h2>
+            <form id="timerSettings">
+                <form id="timerSettings">
+                    <label for="studyActivity">Waktu Aktivitas: </label>
+                    <input type="number" id="studyActivityMinutes" min="0" max="59" placeholder="Menit" value="0" > :
+                    <input type="number" id="studyActivitySeconds" min="1" max="59" placeholder="Detik" value="0">
+                    <br>
+                    <label for="studyBreak">Waktu Istirahat: </label>
+                    <input type="number" id="studyBreakMinutes" min="0" max="59" placeholder="Menit" value="0"> :
+                    <input type="number" id="studyBreakSeconds" min="1" max="59" placeholder="Detik" value="0">
+                </form>
+            </form>
+            <div id="timer">
+                <h3 id="clock">00:00</h3>
+                <button id="start">Mulai</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+
+        <section id="toDoList">
+            <h2>Target Penyelesaian</h2>
+            <form id="addItem">
+                <input type="text" id="task" placeholder="Tambah Rencana" required>
+                <button type="submit">Tambah</button>
+            </form>
+            <ol id="tasks"></ol>
+        </section>
+
+        <section id="statistics">
+            <h2>Statistik</h2>
+            <br>
+            <div class="container">
+                <h4>Grafik Waktu Belajar</h4>
+                <br>
+                <canvas id="studyTimeChart"></canvas>
+                <br>
+                <h4>Grafik Tugas dan Penyelesaian</h4>
+                <br>
+                <canvas id="taskCompletionChart"></canvas>
+            </div>
+        </section>
+
+        <aside id="spotify">
+            <h5>Dengarkan Musik Berikut Sambil Belajar</h5>
+            <div id="player"></div>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Cari lagu atau video..." />
+                <button id="search-button">Cari</button>
+            </div>
+            <div id="results"></div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 ahmadnajib45</p>
+    </footer>
+    <script src="script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
