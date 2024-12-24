@@ -1,23 +1,91 @@
-Project  UAS Membuat Website Pendukung Kegiatan Belajar
+# UAS Project: Website Pendukung Kegiatan Belajar
 
-Fitur:
-1.	Penjelasan Pomodoro
-Di website ini terdapat penjelasan tambahan mengenai apa itu pomodoro time serta fungsinya. Terdapat juga saran inputan default timer untuk menjadi rujukan pengguna awam dalam mengatur timer pomodoro
+## Deskripsi
+Website ini dirancang untuk membantu meningkatkan produktivitas belajar dengan berbagai fitur yang mendukung metode belajar efektif seperti Pomodoro Timer, To-Do List, Statistik Pembelajaran, dan hiburan berupa pemutar musik berbasis YouTube. Proyek ini mengintegrasikan teknologi front-end yang modern untuk pengalaman pengguna yang optimal.
 
-3.	Pomodoro Timer:
-Fitur ini digunakan untuk mengatur timer belajar dan timer istirahat yang saling bergantian. Pengguna dapat menginputkan waktu dalam menit dan detik dan terdapat tombol mulai, jeda, dan reset.
+🌐 **Demo Website**: [UAS Project - Kegiatan Belajar](https://ahmadnajib45.github.io/uas-kbp/)
 
-5.	To-Do List:
-Dalam fitur ini pengguna dapat menginputkan rencana target pembelajaran dan kemudian terdapat keterangan tanggal penginputan serta tombol untuk menandai penyelesaian tugas dan tombol menghapus.
-Data penginputan juga tersimpan dalam memori lokal sehingga tidak hilang jika direfresh.
+---
 
-7.	Statistik Pembelajaran
-Fitur ini memungkinkan pengguna untuk mengetahui grafik perolehan waktu belajar serta jumlah target yang selesai ataupun tertunda.
+## Fitur Utama
 
-9.	Musik
-Fitur ini menjadi tambahan hiburan bagi pengguna untuk menyetel musik ketika pengguna sedang melakukan aktivitas belajar. Disini pada versi sebelumnya digunakanlah spotify, namun karena adanya keterbatasan maka digantilah menggunakan youtube. Dalam fitur ini tersedia menu pencarian, sehingga pengguna dapat memilih musik yang diinginkan dan diputar secara langsung di website.
+### 1. Penjelasan Pomodoro
+💡 **Apa itu Pomodoro?**
+- Penjelasan tentang teknik Pomodoro untuk manajemen waktu.
+- Saran timer default untuk pengguna awam agar lebih mudah memulai.
 
-Spesifikasi Teknologi: 
-Front-End: HTML, CSS, dan JavaScript.
-Framework: Bootstrap
-API: Youtube Data API v3, Youtube Embeded API
+---
+
+### 2. Pomodoro Timer
+⏱️ **Pengatur Waktu Belajar dan Istirahat**
+- Timer belajar dan istirahat yang bergantian.
+- Input waktu fleksibel dalam format menit dan detik.
+- Tombol:
+  - **Mulai**
+  - **Jeda**
+  - **Reset**
+
+---
+
+### 3. To-Do List
+📝 **Kelola Target Pembelajaran**
+- Input rencana pembelajaran dengan keterangan tanggal.
+- Tandai tugas yang selesai.
+- Hapus tugas yang tidak relevan.
+- Data tersimpan di memori lokal sehingga tidak hilang meskipun halaman direfresh.
+
+---
+
+### 4. Statistik Pembelajaran
+📊 **Pantau Kemajuan Belajar**
+- Grafik perolehan waktu belajar.
+- Jumlah target yang selesai dan tertunda.
+
+---
+
+### 5. Musik
+🎵 **Hiburan Selama Belajar**
+- Pemutar musik menggunakan **YouTube Data API v3** dan **YouTube Embedded API**. *
+- Menu pencarian untuk memutar musik favorit langsung dari website.
+
+  *nb: Sebelumnya website ini menggunakan API Spotify namun karena banyaknya keterbatasan maka beralih ke Youtube API
+
+---
+
+## Spesifikasi Teknologi
+
+- **Front-End**: HTML, CSS, JavaScript
+- **Framework**: Bootstrap
+- **API**: YouTube Data API v3, YouTube Embedded API
+
+---
+
+## Cara Menggunakan
+
+1. Kunjungi website melalui tautan [ini](https://ahmadnajib45.github.io/uas-kbp/).
+2. Pilih fitur sesuai kebutuhan Anda:
+   - **Pomodoro Timer** untuk memulai belajar.
+   - **To-Do List** untuk mencatat target pembelajaran.
+   - **Statistik Pembelajaran** untuk memantau progres Anda.
+   - **Musik** untuk mendukung suasana belajar.
+3. Nikmati pengalaman belajar yang lebih produktif dan terorganisir!
+
+---
+
+## Kontribusi
+Kontribusi sangat terbuka! Jika Anda memiliki ide atau perbaikan, silakan:
+
+1. Fork repository ini.
+2. Buat branch baru untuk fitur atau perbaikan Anda.
+3. Kirimkan Pull Request dengan deskripsi perubahan yang jelas.
+
+---
+
+## Pengembang
+👨‍💻 **Ahmad Najib**  
+Mahasiswa Infromatika yang masih pemula.
+
+Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk menghubungi saya melalui GitHub.
+
+
+Selamat belajar dan tetap produktif! 🚀
